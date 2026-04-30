@@ -39,14 +39,24 @@ const ICONS = {
   ),
 };
 
-export default function FivePillars() {
+export default function FivePillars({ pillars } = {}) {
+  const items = Array.isArray(pillars) && pillars.length > 0
+    ? pillars.map((p, i) => ({
+        key: p.icon ?? p.key ?? `pillar-${i}`,
+        icon: p.icon,
+        title: p.title ?? '',
+        subtitle: p.subtitle ?? '',
+        description: p.description ?? '',
+      }))
+    : DISCIPLINES;
+
   return (
     <div className={styles.grid}>
-      {DISCIPLINES.map(d => (
-        <div key={d.key} className={`${styles.card} reveal`}>
-          <div className={styles.icon}>{ICONS[d.key]}</div>
+      {items.map((d, i) => (
+        <div key={d.key ?? i} className={`${styles.card} reveal`}>
+          <div className={styles.icon}>{ICONS[d.icon ?? d.key] ?? null}</div>
           <h3 className={styles.title}>{d.title}</h3>
-          <span className={styles.subtitle}>{d.subtitle}</span>
+          {d.subtitle && <span className={styles.subtitle}>{d.subtitle}</span>}
           <p className={styles.description}>{d.description}</p>
         </div>
       ))}

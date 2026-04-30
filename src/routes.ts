@@ -4,6 +4,10 @@ export default [
   // API resource routes (no UI)
   route("api/cal-webhook", "./pages/api.cal-webhook.js"),
 
+  // Canvas preview — bare-bones (no Nav/Footer). Used as iframe target
+  // by the Loki canvas builder to show pixel-perfect renders.
+  route("canvas-preview", "./pages/CanvasPreview.jsx"),
+
   layout("./components/Layout.jsx", [
     index("./pages/HomePage.jsx"),
     route("capabilities", "./pages/CapabilitiesPage.jsx"),

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router';
 import styles from '../pages/HomePage.module.css';
 
@@ -6,7 +6,7 @@ import styles from '../pages/HomePage.module.css';
  * Segments: `{ text, pauseMs }` typed char-by-char; beat = pauseMs, then line break;
  * `nlAfter: true` on the opener = line break right after “Your …” (no beat there).
  */
-const CAROUSEL_SLIDES = [
+const DEFAULT_SLIDES = [
   {
     segments: [
       { text: 'Your website ', pauseMs: 0, nlAfter: true },
@@ -63,7 +63,28 @@ function slideFullText(slide) {
   return parts.join('');
 }
 
-const CAROUSEL_ARIA_SUMMARY = CAROUSEL_SLIDES.map(slideFullText).join(' ');
+/** Normalise a YAML-shaped slide (segments: [string, ...]) into the internal shape. */
+function normaliseSlides(input) {
+  if (!Array.isArray(input) || input.length === 0) return DEFAULT_SLIDES;
+  return input.map((slide) => {
+    const segs = Array.isArray(slide?.segments) ? slide.segments : [];
+    if (segs.length === 0) return { segments: [{ text: '', pauseMs: 0 }] };
+    return {
+      segments: segs.map((seg, idx) => {
+        if (typeof seg === 'string') {
+          // First segment with trailing space gets nlAfter (matches "Your X " convention)
+          const trailingSpace = idx === 0 && seg.endsWith(' ');
+          return {
+            text: seg,
+            pauseMs: idx === segs.length - 1 ? 0 : trailingSpace ? 0 : 1040,
+            nlAfter: trailingSpace,
+          };
+        }
+        return { text: seg.text ?? '', pauseMs: seg.pauseMs ?? 0, nlAfter: !!seg.nlAfter };
+      }),
+    };
+  });
+}
 
 /** One blink cycle matches `.heroCursor` animation (1s); intro = 3 blinks before typing */
 const CURSOR_BLINK_CYCLE_MS = 1000;
@@ -98,12 +119,22 @@ function charDelayMs() {
   return CHAR_MS_MIN + Math.floor(Math.random() * (CHAR_MS_MAX - CHAR_MS_MIN + 1));
 }
 
-export default function HomeHero() {
+export default function HomeHero({
+  carousel_slides,
+  subtitle,
+  cta,
+} = {}) {
   const reducedMotion = useSyncExternalStore(
     subscribeReducedMotion,
     getReducedMotionSnapshot,
     getReducedMotionServerSnapshot
   );
+
+  const slides = useMemo(() => normaliseSlides(carousel_slides), [carousel_slides]);
+  const ariaSummary = useMemo(() => slides.map(slideFullText).join(' '), [slides]);
+  const subtitleText = subtitle ?? "We're a team of engineers, designers and strategists using code, context, experience and curiosity to build high-performance brand web portfolios.";
+  const ctaLabel = cta?.label ?? 'Explore capabilities';
+  const ctaHref = cta?.href ?? '/capabilities';
 
   const [headline, setHeadline] = useState('');
   const [slideIndex, setSlideIndex] = useState(0);
@@ -146,7 +177,7 @@ export default function HomeHero() {
     cancelled.current = false;
     let idx = 0;
     while (!cancelled.current) {
-      const slide = CAROUSEL_SLIDES[idx];
+      const slide = slides[idx];
       setSlideIndex(idx);
       setHeadline('');
       setTypingDone(false);
@@ -158,16 +189,16 @@ export default function HomeHero() {
       setCarouselVisible(false);
       await sleep(CROSSFADE_MS);
       if (cancelled.current) return;
-      idx = (idx + 1) % CAROUSEL_SLIDES.length;
+      idx = (idx + 1) % slides.length;
     }
-  }, [typeSlide]);
+  }, [typeSlide, slides]);
 
   useEffect(() => {
     cancelled.current = false;
     const startId = window.setTimeout(() => {
       if (reducedMotion) {
         setSlideIndex(0);
-        setHeadline(slideFullText(CAROUSEL_SLIDES[0]));
+        setHeadline(slideFullText(slides[0]));
         setTypingDone(true);
         setCarouselVisible(true);
         return;
@@ -186,17 +217,17 @@ export default function HomeHero() {
     const ROTATE_MS = HOLD_AFTER_SLIDE_MS + CROSSFADE_MS;
     const id = window.setInterval(() => {
       setSlideIndex(i => {
-        const next = (i + 1) % CAROUSEL_SLIDES.length;
-        setHeadline(slideFullText(CAROUSEL_SLIDES[next]));
+        const next = (i + 1) % slides.length;
+        setHeadline(slideFullText(slides[next]));
         return next;
       });
     }, ROTATE_MS);
     return () => clearInterval(id);
   }, [reducedMotion]);
 
-  const ariaLabel = CAROUSEL_SLIDES[slideIndex]
-    ? slideFullText(CAROUSEL_SLIDES[slideIndex])
-    : CAROUSEL_ARIA_SUMMARY;
+  const ariaLabel = slides[slideIndex]
+    ? slideFullText(slides[slideIndex])
+    : ariaSummary;
 
   return (
     <>
@@ -212,11 +243,10 @@ export default function HomeHero() {
         </span>
       </h1>
       <p className={`${styles.heroSub} ${styles.heroFade} ${styles.heroFadeVisible}`}>
-        We&apos;re a team of engineers, designers and strategists using code, context, experience and
-        curiosity to build high-performance brand web portfolios.
+        {subtitleText}
       </p>
-      <Link to="/capabilities" className={`btn btn--pink ${styles.heroFade} ${styles.heroFadeVisible}`}>
-        Explore capabilities
+      <Link to={ctaHref} className={`btn btn--pink ${styles.heroFade} ${styles.heroFadeVisible}`}>
+        {ctaLabel}
       </Link>
     </>
   );
