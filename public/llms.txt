@@ -1,0 +1,59 @@
+# Coherence
+> We make it make sense.
+
+## About
+Coherence is a UK-based digital consultancy helping organisations in regulated industries unlock the full potential of existing and emerging marketing technologies. We combine strategic insight with technical expertise to deliver measurable outcomes.
+
+## Capabilities
+- Vision & Strategy
+- Data & Analytics
+- Product, Service & Experience Design
+- Digital Marketing (SEO, GEO, AIO, AEO, PPC)
+- Technical Enablement (DXP/CMS, CRM, AI, Martech)
+
+## Technology Partners
+- Acquia
+- Amazon Web Services
+- Drupal
+- Google Cloud
+- Umbraco
+
+## Accreditations
+- Crown Commercial Services Supplier
+- Cyber Essentials Plus
+- Greenly (Carbon Accounting)
+- ISO 9001
+- Living Wage Employer
+- MemberWise Recognised Supplier 2025
+
+## Key Clients
+- Bayer Consumer Health
+- British Business Bank
+- National Grid
+- ParalympicsGB
+- Stanley Black & Decker
+- Rail Delivery Group
+- Marriott
+
+## Contact
+- Email: hello@coherence.digital
+- Phone: +44 (0) 20 8938 3136
+- Address: 11 Slingsby Place, London, WC2E 9AB
+- LinkedIn: https://www.linkedin.com/company/coherence-digital/
+- YouTube: https://www.youtube.com/@DigitalTransformationSurvivors
+
+## Pages
+- /capabilities — Our service offerings
+- /case-studies — Client work and results
+- /company — Our team and values
+- /content/articles — Thought leadership
+- /content/podcast — Digital Transformation Survivors podcast
+- /content/events — Industry events
+- /content/net-zero — Sustainability commitment
+- /contact — Get in touch
+
+## Part of Cohaesus Group
+Coherence is a member of the multi-award-winning Cohaesus Group, with access to a global network of specialist capabilities spanning creativity, technology and marketing services.
+
+## Legal
+Coherence Consulting Limited. UK Registration #13606667. VAT #GB389732637.

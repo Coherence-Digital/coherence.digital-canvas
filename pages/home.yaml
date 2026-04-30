@@ -1,0 +1,78 @@
+slug: home
+title: Coherence Digital
+meta:
+  description: >
+    Coherence helps organisations in regulated industries unlock the full
+    potential of existing and emerging marketing technologies.
+  path: /
+sections:
+  - id: sec-hero-1
+    pattern: hero
+    content:
+      carousel_slides:
+        - segments: ["Your website ", "rebuilt in days.", "Improved every week.", "Governed always."]
+        - segments: ["Your content ", "migrated & ", "transformed.", "Enriched & optimised."]
+        - segments: ["Your code ", "known inside out.", "Tuned for speed.", "Bootstrapped for innovation."]
+        - segments: ["Your business ", "powered by context.", "Deciding on data.", "Ready to pivot."]
+        - segments: ["Your brand ", "Baked into your tech.", "Consistent and scaled."]
+      subtitle: >
+        We're a team of engineers, designers and strategists using code,
+        context, experience and curiosity to build high-performance brand
+        web portfolios.
+      cta:
+        label: Explore capabilities
+        href: /capabilities
+        variant: pink
+
+  - id: sec-pillars-1
+    pattern: five-pillars
+    content:
+      pillars:
+        - icon: consulting
+          title: Consulting
+          subtitle: Understand
+          description: >
+            Human strategists and AI agents map your stakeholders, audiences
+            and market — then keep that picture current, continuously. Not a
+            one-off audit; a living understanding of your organisation.
+        - icon: concept
+          title: Concept
+          subtitle: Design
+          description: >
+            Research-led propositions shaped by human creativity and validated
+            by data agents that test, learn and refine. From insight to
+            prototype, every decision backed by evidence.
+        - icon: code
+          title: Code
+          subtitle: Build
+          description: >
+            Secure technology platforms assembled by engineers, maintained by
+            automated pipelines that monitor, patch and optimise around the
+            clock. Your platform rebuilt in days, not months.
+        - icon: context
+          title: Context
+          subtitle: Measure
+          description: >
+            Real-time dashboards and decision agents that surface what's
+            working, what isn't, and what to do about it — not quarterly,
+            but always. Every metric tied to a business outcome.
+        - icon: care
+          title: Care
+          subtitle: Run
+          description: >
+            Your digital platform is never finished. Our operations layer
+            keeps it secure, performant and continuously improving —
+            agent-assisted, human-governed.
+
+  - id: sec-trust-1
+    pattern: pillar-banner
+    content:
+      dark: false
+      items:
+        - Bayer
+        - British Business Bank
+        - National Grid
+        - Hilton
+        - Wagtail
+        - GOV.UK
+        - WCAG 2.2 AA

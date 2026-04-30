@@ -1,0 +1,754 @@
+/* ── Podcast Hero (takeover) ──────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--coh-dark);
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+}
+
+/* ── Falling quotes ──────────────────────────────────── */
+.fallingQuotes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fq {
+  position: absolute;
+  left: var(--fq-x, 10%);
+  top: -10%;
+  font-size: var(--fq-size, 0.65rem);
+  font-style: italic;
+  color: rgba(255, 255, 255, var(--fq-alpha, 0.12));
+  white-space: normal;
+  max-width: 16ch;
+  line-height: 1.35;
+  animation: fqFall var(--fq-duration, 20s) var(--fq-delay, 0s) linear infinite;
+  will-change: transform;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+@keyframes fqFall {
+  0% {
+    transform: translateY(-20px) rotate(-2deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(90vh + 40px)) rotate(1deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fq {
+    animation: none;
+    display: none;
+  }
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: clamp(80px, 12vw, 140px) clamp(20px, 4vw, 40px) clamp(60px, 8vw, 100px);
+  max-width: var(--coh-max-width);
+}
+
+.heroBadge {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  object-fit: cover;
+}
+
+.heroTitle {
+  font-family: var(--coh-font-heading);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--coh-white);
+  margin-bottom: 20px;
+}
+
+.heroSub {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 52ch;
+  margin: 0 auto 48px;
+  line-height: 1.7;
+}
+
+/* ── Guest montage ───────────────────────────────────── */
+.guestMontage {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.guestCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.3s var(--coh-ease);
+}
+
+.guestCard:hover {
+  transform: translateY(-4px);
+}
+
+.guestThumb {
+  width: 180px;
+  height: 102px;
+  border-radius: var(--coh-radius-md);
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.guestCard:hover .guestThumb {
+  border-color: var(--coh-red);
+}
+
+.guestName {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--coh-white);
+}
+
+.guestRole {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -6px;
+}
+
+@media (max-width: 768px) {
+  .guestMontage {
+    gap: 16px;
+  }
+  .guestThumb {
+    width: 140px;
+    height: 79px;
+  }
+}
+
+/* ── Platform links row ──────────────────────────────── */
+.platformLinks {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Hero anchor CTAs ────────────────────────────────── */
+.heroAnchors {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.heroAnchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  color: var(--coh-white);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.heroAnchor:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.heroAnchor svg {
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .heroAnchors {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ── About section ───────────────────────────────────── */
+.aboutSection {
+  background: var(--coh-white);
+}
+
+.aboutInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+
+.aboutImage {
+  border-radius: var(--coh-radius-lg);
+  overflow: hidden;
+}
+
+.aboutImage img {
+  width: 100%;
+  display: block;
+  border-radius: var(--coh-radius-lg);
+}
+
+.aboutCopy h2 {
+  margin-bottom: 20px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.aboutCopy p {
+  color: var(--coh-grey-700);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.aboutCopy p:last-of-type {
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .aboutInner {
+    grid-template-columns: 1fr;
+  }
+  .aboutImage {
+    order: -1;
+  }
+}
+
+/* ── Meet the Crew bar ───────────────────────────────── */
+.crewBar {
+  background: var(--coh-dark);
+  padding: 0;
+  overflow: hidden;
+}
+
+.crewBarInner {
+  display: flex;
+  align-items: stretch;
+  min-height: 160px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease;
+}
+
+.crewBarVisible .crewBarInner {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.crewArrow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--coh-red);
+  color: var(--coh-white);
+  padding: 32px clamp(24px, 4vw, 48px);
+  flex-shrink: 0;
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 50%, calc(100% - 24px) 100%, 0 100%);
+  padding-right: clamp(40px, 6vw, 72px);
+}
+
+.crewArrowText {
+  font-family: var(--coh-font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+.crewArrowIcon {
+  width: 48px;
+  height: 24px;
+  color: var(--coh-white);
+  flex-shrink: 0;
+}
+
+.crewCards {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+  padding: 24px clamp(24px, 4vw, 48px);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.crewCards::-webkit-scrollbar {
+  display: none;
+}
+
+.crewCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.crewPhoto {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.crewBlurb {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 180px;
+  flex-shrink: 0;
+  margin: 0;
+  padding-right: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crewInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.crewInfo strong {
+  color: var(--coh-white);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.crewInfo span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.crewRole {
+  color: var(--coh-red) !important;
+  font-style: italic;
+  font-size: 0.72rem !important;
+}
+
+@media (max-width: 768px) {
+  .crewBarInner {
+    flex-direction: column;
+  }
+  .crewArrow {
+    clip-path: none;
+    padding: 20px 24px;
+    justify-content: center;
+  }
+  .crewCards {
+    padding: 16px 24px 24px;
+  }
+  .crewBlurb {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-right: 0;
+    padding-bottom: 16px;
+    max-width: none;
+  }
+}
+
+/* ── Episodes list ───────────────────────────────────── */
+.episodeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.episodeCard {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--coh-grey-300);
+  border-radius: var(--coh-radius-md);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.episodeCard:hover {
+  border-color: var(--coh-pink);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.episodeThumb {
+  width: 160px;
+  min-width: 160px;
+  height: 90px;
+  border-radius: var(--coh-radius-sm);
+  object-fit: cover;
+}
+
+.episodeContent h3 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.episodeContent time {
+  font-size: 0.78rem;
+  color: var(--coh-grey-500);
+}
+
+.episodeLabel {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--coh-pink);
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .episodeGrid {
+    grid-template-columns: 1fr;
+  }
+  .episodeThumb {
+    width: 120px;
+    min-width: 120px;
+    height: 68px;
+  }
+}
+
+/* ── Quote Ticker ────────────────────────────────────── */
+.tickerBar {
+  background: var(--coh-dark);
+  overflow: hidden;
+  padding: 54px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tickerTrack {
+  display: flex;
+  width: max-content;
+  animation: tickerScroll 60s linear infinite;
+}
+
+.tickerTrack:hover {
+  animation-play-state: paused;
+}
+
+.tickerSlide {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.tickerLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tickerLink:hover .tickerQuote {
+  color: var(--coh-white);
+}
+
+.tickerLink:hover .tickerAttr {
+  color: var(--coh-pink);
+}
+
+.tickerItem {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0 40px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tickerQuote {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+  line-height: 1.5;
+}
+
+.tickerAttr {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.2s ease;
+}
+
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tickerTrack {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    gap: 16px;
+  }
+  .tickerSlide:nth-child(2) {
+    display: none;
+  }
+  .tickerItem {
+    padding: 0 20px;
+  }
+}
+
+/* ── Schedule / booking section ──────────────────────── */
+.scheduleSection {
+  background: var(--coh-grey-100);
+}
+
+.scheduleInner {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.scheduleInner h2 {
+  margin-bottom: 16px;
+}
+
+.scheduleInner > p {
+  color: var(--coh-grey-700);
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.calEmbed {
+  margin-top: 24px;
+  border-radius: var(--coh-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--coh-grey-300);
+  min-height: 500px;
+}
+
+.calBooker {
+  width: 100%;
+  min-height: 500px;
+}
+
+/* ── About Coherence panel ───────────────────────────── */
+.coherencePanel {
+  background: var(--coh-dark);
+}
+
+.coherencePanelInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.coherencePanelInner h2 {
+  color: var(--coh-white);
+  margin-bottom: 16px;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+}
+
+.coherencePanelInner > p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coherenceStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin: 48px 0;
+  text-align: center;
+}
+
+.coherenceStat strong {
+  display: block;
+  font-family: var(--coh-font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--coh-white);
+  letter-spacing: -0.02em;
+}
+
+.coherenceStat span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.4;
+}
+
+/* ── Client logos ─────────────────────────────────────── */
+.clientLogos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 4vw, 48px);
+  flex-wrap: wrap;
+  margin: 40px 0 8px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.clientLogo {
+  height: 36px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+
+.clientLogo:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .coherenceStats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Featured case study card ────────────────────────── */
+.featuredCase {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: center;
+  margin: 40px 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--coh-radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.featuredCase:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.featuredCaseImage {
+  width: 100%;
+  border-radius: var(--coh-radius-md);
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+
+.featuredCaseContent {
+  text-align: left;
+}
+
+.featuredCaseLabel {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--coh-pink);
+  margin-bottom: 8px;
+}
+
+.featuredCaseContent h3 {
+  color: var(--coh-white);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.featuredCaseContent p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.featuredCaseLink {
+  color: var(--coh-pink);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .featuredCase {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Coherence CTA ───────────────────────────────────── */
+.coherenceCta {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.coherenceCta p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* ── Campaign tracking (invisible) ───────────────────── */
+.campaignBanner {
+  background: var(--coh-red);
+  color: var(--coh-white);
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}

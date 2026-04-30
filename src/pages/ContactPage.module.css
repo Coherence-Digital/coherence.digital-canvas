@@ -1,0 +1,142 @@
+.hero {
+  padding: clamp(80px, 12vw, 160px) 0 var(--coh-section-pad);
+}
+
+.hero h1 { margin-bottom: 16px; }
+
+.heroSub {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  max-width: 560px;
+  color: var(--coh-grey-700);
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* ── Form ─────────────────────────────────────────── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coh-grey-700);
+}
+
+.field input,
+.field textarea {
+  font-family: var(--coh-font-body);
+  font-size: 0.95rem;
+  padding: 14px 16px;
+  border: 1.5px solid var(--coh-grey-300);
+  border-radius: var(--coh-radius-sm);
+  background: var(--coh-white);
+  color: var(--coh-dark);
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--coh-pink);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* ── Success ──────────────────────────────────────── */
+.success {
+  padding: 48px;
+  text-align: center;
+  background: var(--coh-pink-light);
+  border-radius: var(--coh-radius-lg);
+}
+
+.success h2 {
+  color: var(--coh-pink);
+  margin-bottom: 12px;
+}
+
+/* ── Contact info ─────────────────────────────────── */
+.info {
+  padding: 40px;
+  background: var(--coh-grey-100);
+  border-radius: var(--coh-radius-lg);
+}
+
+.infoBlock {
+  margin-bottom: 28px;
+}
+
+.infoBlock:last-child {
+  margin-bottom: 0;
+}
+
+.infoBlock h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--coh-grey-500);
+  margin-bottom: 6px;
+}
+
+.infoBlock a,
+.infoBlock p {
+  font-size: 0.9rem;
+  color: var(--coh-dark);
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.infoBlock a:hover {
+  color: var(--coh-pink);
+}
+
+/* ── Offices ──────────────────────────────────── */
+.officeCard {
+  padding: 32px;
+  background: var(--coh-white);
+  border-radius: var(--coh-radius-lg);
+  border: 1px solid var(--coh-grey-300);
+}
+
+.officeCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.officeCard p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--coh-grey-700);
+}
+
+.transport {
+  margin-top: 8px;
+  font-size: 0.78rem !important;
+  color: var(--coh-grey-500) !important;
+  font-style: italic;
+}

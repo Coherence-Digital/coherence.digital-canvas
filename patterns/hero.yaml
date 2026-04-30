@@ -1,0 +1,25 @@
+name: hero
+version: 1.0.0
+category: hero
+display_name: Home Hero
+description: >
+  Full-bleed hero with a typewriter-animated carousel headline, supporting
+  subtitle and a primary CTA. Used at the top of the home page.
+react_component: HomeHero
+react_module: ../components/HomeHero.jsx
+slots:
+  - { name: carousel_slides, type: list<carousel_slide>, required: true }
+  - { name: subtitle,        type: text,                  required: false }
+  - { name: cta,             type: link,                  required: false }
+preview:
+  thumbnail: hero.png
+  aspect: 16/9
+  shape: full-bleed
+design_tokens:
+  - color.surface.primary
+  - type.display.xl
+  - motion.cursor-blink
+sub_types:
+  carousel_slide:
+    slots:
+      - { name: segments, type: list<text>, required: true }

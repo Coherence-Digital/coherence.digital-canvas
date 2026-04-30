@@ -1,0 +1,106 @@
+.hero {
+  padding: clamp(80px, 12vw, 160px) 0 var(--coh-section-pad);
+}
+
+.hero h1 { margin-bottom: 16px; }
+
+.heroSub {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  max-width: 560px;
+  color: var(--coh-grey-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--coh-radius-lg);
+  overflow: hidden;
+  background: var(--coh-white);
+  border: 1px solid var(--coh-grey-300);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--coh-shadow-lg);
+}
+
+.cardImage {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--coh-grey-100);
+  padding: clamp(32px, 4vw, 48px) clamp(20px, 3vw, 36px) 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cardImage img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: var(--coh-radius-sm) var(--coh-radius-sm) 0 0;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage img {
+  transform: scale(1.03);
+}
+
+.cardBody {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--coh-pink);
+  background: var(--coh-pink-light);
+  padding: 4px 10px;
+  border-radius: var(--coh-radius-pill);
+}
+
+.cardTitle {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.cardIntro {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--coh-grey-700);
+  flex: 1;
+}
+
+.readMore {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--coh-pink);
+  letter-spacing: 0.02em;
+}

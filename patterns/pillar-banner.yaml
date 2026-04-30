@@ -1,0 +1,19 @@
+name: pillar-banner
+version: 1.0.0
+category: content
+display_name: Trust Signals Banner
+description: >
+  Horizontally-scrolling marquee strip of accreditations, partner logos, or
+  trust signals. Loops infinitely; supports light or dark variants.
+react_component: PillarBanner
+react_module: ../components/PillarBanner.jsx
+slots:
+  - { name: items, type: list<string>, required: true, min: 3 }
+  - { name: dark,  type: enum,         options: [true, false], default: false }
+preview:
+  thumbnail: pillar-banner.png
+  aspect: 16/2
+  shape: full-bleed-strip
+design_tokens:
+  - color.surface.alt
+  - motion.marquee

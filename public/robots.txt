@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# LLM bots — welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# Block Bytespider
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://coherence.digital/sitemap.xml

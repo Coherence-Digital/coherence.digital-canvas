@@ -1,0 +1,74 @@
+.hero {
+  padding: clamp(80px, 12vw, 160px) 0 var(--coh-section-pad);
+}
+
+.hero h1 { margin-bottom: 16px; }
+
+.heroSub {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  max-width: 600px;
+  color: var(--coh-grey-700);
+  line-height: 1.8;
+}
+
+/* ── Team grid ────────────────────────────────────── */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(20px, 3vw, 40px);
+}
+
+@media (max-width: 1024px) {
+  .teamGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .teamGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.teamCard {
+  text-align: center;
+}
+
+.teamAvatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+}
+
+.teamName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.teamRole {
+  font-size: 0.8rem;
+  color: var(--coh-grey-500);
+  margin-bottom: 8px;
+}
+
+.teamLink {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--coh-pink);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.teamLink:hover { opacity: 0.7; }
+
+/* ── Cohaesus ─────────────────────────────────────── */
+.cohaesus {
+  max-width: 700px;
+}
+
+.cohaesus h2 {
+  margin-bottom: 16px;
+}
+
+.cohaesus p {
+  line-height: 1.8;
+}

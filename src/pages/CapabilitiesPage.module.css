@@ -1,0 +1,281 @@
+.hero {
+  padding: clamp(80px, 12vw, 160px) 0 var(--coh-section-pad);
+  background: var(--coh-white);
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+}
+
+.heroSub {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  max-width: 580px;
+  color: var(--coh-grey-700);
+}
+
+/* ── 5C Discipline rows ─────────────────────────────────── */
+.discipline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 80px);
+  align-items: center;
+  padding: var(--coh-section-pad-sm) 0;
+  border-bottom: 1px solid var(--coh-grey-300);
+}
+
+.discipline:last-child {
+  border-bottom: none;
+}
+
+.disciplineReverse {
+  direction: rtl;
+}
+
+.disciplineReverse .disciplineText,
+.disciplineReverse .disciplineIcon {
+  direction: ltr;
+}
+
+.disciplineSubtitle {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--coh-red);
+  margin-bottom: 4px;
+}
+
+.disciplineText h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+}
+
+.disciplineText p {
+  line-height: 1.8;
+}
+
+.disciplineIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(24px, 4vw, 56px);
+}
+
+.disciplineIcon svg {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 1;
+  color: var(--coh-red);
+  opacity: 0.85;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.discipline:hover .disciplineIcon svg {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .discipline {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .disciplineReverse {
+    direction: ltr;
+  }
+  .disciplineIcon {
+    order: -1;
+    padding: 16px;
+  }
+  .disciplineIcon svg {
+    max-width: 160px;
+  }
+}
+
+/* ── Accreditations ──────────────────────────────────────── */
+.accreditHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.accreditHeader h2 {
+  margin-top: 8px;
+}
+
+.accreditGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: start;
+  justify-items: center;
+}
+
+.accreditCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.accreditCard img {
+  width: 100%;
+  max-width: 120px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.accreditCard span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--coh-grey-500);
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .accreditGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .accreditGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Partners ─────────────────────────────────────────── */
+.partnersHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.partnersHeader h2 {
+  margin-top: 8px;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+}
+
+.partnerCard {
+  text-align: center;
+}
+
+.partnerCard h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.partnerCard p {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--coh-grey-700);
+}
+
+.partnerLogo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerLogo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.partnerLogoDrupal {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 1024px) {
+  .partners {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .partners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Coherence Pipelines ───────────────────────────────── */
+.pipelinesHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.pipelinesHeader h2 {
+  margin-top: 8px;
+}
+
+.pipelinesSub {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  max-width: 560px;
+  margin: 12px auto 0;
+  color: var(--coh-grey-700);
+}
+
+.pipelinesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.pipelineCard {
+  background: var(--coh-grey-100);
+  border-radius: 12px;
+  padding: clamp(24px, 2.5vw, 32px);
+  border-top: 3px solid var(--coh-red);
+  display: flex;
+  flex-direction: column;
+}
+
+.pipelineTitle {
+  font-family: var(--coh-font-heading);
+  font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--coh-dark);
+}
+
+.pipelineDesc {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--coh-grey-700);
+  margin-bottom: 12px;
+}
+
+.pipelineValue {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--coh-grey-500);
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--coh-grey-300);
+}
+
+@media (max-width: 1024px) {
+  .pipelinesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pipelinesGrid {
+    grid-template-columns: 1fr;
+  }
+}

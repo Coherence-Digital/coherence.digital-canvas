@@ -1,0 +1,86 @@
+/* ── CaseStudyHugeHero ────────────────────────────────── */
+/* Design system: new pattern (spec-evolve)                */
+/* Reference: coherence.digital BBB hero section           */
+
+.hugeHero {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Parallax background image */
+.bg {
+  position: absolute;
+  inset: -120px 0;         /* extra height for parallax travel */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  transition: none;
+}
+
+/* Dark overlay for text contrast */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Content layer */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: clamp(64px, 10vw, 120px) clamp(20px, 4vw, 40px);
+  max-width: var(--coh-max-width);
+}
+
+/* Pink eyebrow label */
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--coh-white);
+  margin-bottom: 24px;
+}
+
+/* Over-large title — matches source site's massive heading */
+.title {
+  font-family: var(--coh-font-heading);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--coh-white);
+  margin-bottom: 24px;
+  max-width: 14ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  color: var(--coh-white);
+  max-width: 48ch;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hugeHero {
+    min-height: 60vh;
+  }
+
+  .title {
+    max-width: none;
+  }
+}

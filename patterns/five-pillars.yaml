@@ -1,0 +1,25 @@
+name: five-pillars
+version: 1.0.0
+category: content
+display_name: Five Pillars Grid
+description: >
+  Five-column grid of disciplines, each with an icon, title, subtitle, and
+  description. Renders as five cards on desktop, stacked on mobile.
+react_component: FivePillars
+react_module: ../components/FivePillars.jsx
+slots:
+  - { name: pillars, type: list<pillar_card>, required: true, min: 3, max: 6 }
+preview:
+  thumbnail: five-pillars.png
+  aspect: 16/6
+  shape: grid-5
+design_tokens:
+  - color.surface.muted
+  - type.heading.md
+sub_types:
+  pillar_card:
+    slots:
+      - { name: icon,        type: enum,   options: [consulting, concept, code, context, care], required: true }
+      - { name: title,       type: string, required: true }
+      - { name: subtitle,    type: string, required: false }
+      - { name: description, type: text,   required: true }

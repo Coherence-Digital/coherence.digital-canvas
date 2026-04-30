@@ -1,0 +1,342 @@
+/* ── Hero ─────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--coh-white);
+  overflow: hidden;
+  padding: clamp(100px, 14vw, 180px) 0 clamp(60px, 8vw, 100px);
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%);
+  z-index: 0;
+}
+
+/* ── Falling quotes (same treatment as /content/podcast) ── */
+.fallingQuotes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fq {
+  position: absolute;
+  left: var(--fq-x, 10%);
+  top: -10%;
+  font-size: var(--fq-size, 0.65rem);
+  font-style: italic;
+  color: rgba(255, 255, 255, var(--fq-alpha, 0.12));
+  white-space: normal;
+  max-width: 16ch;
+  line-height: 1.35;
+  animation: fqFall var(--fq-duration, 20s) var(--fq-delay, 0s) linear infinite;
+  will-change: transform;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+
+@keyframes fqFall {
+  0% {
+    transform: translateY(-20px) rotate(-2deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(90vh + 40px)) rotate(1deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fq {
+    animation: none;
+    display: none;
+  }
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 80%, rgba(207, 56, 94, 0.15), transparent 60%),
+              radial-gradient(ellipse at 70% 20%, rgba(80, 120, 200, 0.08), transparent 50%);
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heroBadge {
+  width: clamp(100px, 14vw, 160px);
+  margin: 0 auto 28px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: var(--coh-white);
+}
+
+.heroSub {
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroSub + .btn {
+  margin-top: 16px;
+}
+
+/* ── What to expect ──────────────────────────────────── */
+.expectSection {
+  background: var(--coh-white);
+}
+
+.expectInner {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.expectInner h2 {
+  margin-bottom: 40px;
+}
+
+.expectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  text-align: left;
+}
+
+.expectCard {
+  background: var(--coh-grey-100);
+  border-radius: var(--coh-radius-lg);
+  padding: 28px;
+}
+
+.expectCard strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--coh-dark);
+}
+
+.expectCard p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--coh-grey-700);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .expectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Recent guests ───────────────────────────────────── */
+.guestsSection h2 {
+  margin-bottom: 32px;
+}
+
+.guestGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.guestCard {
+  border-radius: var(--coh-radius-lg);
+  overflow: hidden;
+  background: var(--coh-white);
+  border: 1px solid var(--coh-grey-300);
+}
+
+.guestThumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.guestInfo {
+  padding: 16px 20px;
+}
+
+.guestInfo strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.guestInfo span {
+  font-size: 0.8rem;
+  color: var(--coh-grey-700);
+}
+
+@media (max-width: 768px) {
+  .guestGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Topics ──────────────────────────────────────────── */
+.topicsSection {
+  background: var(--coh-white);
+}
+
+.topicsInner {
+  max-width: 680px;
+}
+
+.topicsInner h2 {
+  margin-bottom: 16px;
+}
+
+.topicsIntro {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--coh-grey-700);
+  margin-bottom: 28px;
+}
+
+.topicsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.topicsList li {
+  position: relative;
+  padding: 14px 0 14px 28px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--coh-grey-900);
+  border-bottom: 1px solid var(--coh-grey-200);
+}
+
+.topicsList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--coh-pink);
+}
+
+.topicsCta {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--coh-grey-700);
+}
+
+.topicsCta a {
+  color: var(--coh-pink);
+  font-weight: 600;
+}
+
+/* ── Booking ─────────────────────────────────────────── */
+.bookSection {
+  background: var(--coh-grey-100);
+}
+
+.bookInner {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.bookInner h2 {
+  margin-bottom: 16px;
+}
+
+.bookInner > p {
+  color: var(--coh-grey-700);
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.calEmbed {
+  margin-top: 24px;
+  border-radius: var(--coh-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--coh-grey-300);
+  background: var(--coh-white);
+  min-height: 500px;
+}
+
+/* ── About Coherence ─────────────────────────────────── */
+.aboutSection {
+  background: var(--coh-white);
+  border-top: 1px solid var(--coh-grey-200);
+}
+
+.aboutInner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.aboutBadge {
+  width: 100px;
+  flex-shrink: 0;
+  border-radius: var(--coh-radius-md);
+  background: var(--coh-grey-100);
+  padding: 16px;
+}
+
+.aboutInner h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.aboutInner p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--coh-grey-700);
+  margin-bottom: 12px;
+}
+
+.aboutLink {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--coh-pink);
+}
+
+@media (max-width: 640px) {
+  .aboutInner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,154 @@
+.hero {
+  padding: clamp(80px, 12vw, 140px) 0 var(--coh-section-pad-sm);
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--coh-grey-500);
+  margin-bottom: 24px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back:hover { color: var(--coh-dark); }
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.82rem;
+  color: var(--coh-grey-500);
+}
+
+.typeBadge {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  padding: 3px 10px;
+  border-radius: var(--coh-radius-pill);
+  color: #6c5ce7;
+  background: #f0eeff;
+}
+
+.episodeLabel {
+  font-weight: 700;
+  color: var(--coh-grey-700);
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  max-width: 800px;
+}
+
+.seriesName {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--coh-grey-500);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── YouTube embed ───────────────────────────────── */
+.videoWrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.videoFrame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  border-radius: var(--coh-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--coh-shadow-lg);
+  background: var(--coh-dark);
+}
+
+.videoFrame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ── Description ─────────────────────────────────── */
+.description {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.8;
+  color: var(--coh-grey-700);
+  margin-top: 32px;
+}
+
+/* ── Platform links ──────────────────────────────── */
+.platformLinks {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* ── About the podcast ───────────────────────────── */
+.aboutPodcast {
+  background: var(--coh-dark);
+  color: #fff;
+}
+
+.aboutInner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutBadge {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.aboutPodcast h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.aboutCopy p {
+  font-size: clamp(0.95rem, 1.1vw, 1.08rem);
+  line-height: 1.8;
+  color: var(--coh-grey-400);
+}
+
+.aboutCta {
+  margin-top: 28px;
+}
+
+/* ── Next episode ────────────────────────────────── */
+.nextEpisode {
+  border-top: 1px solid var(--coh-grey-300);
+}
+
+.nextEpisode h3 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nextEpisode h3 a {
+  color: var(--coh-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nextEpisode h3 a:hover {
+  color: var(--coh-pink);
+}

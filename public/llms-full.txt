@@ -1,0 +1,658 @@
+# Coherence
+
+> We make it make sense.
+
+Coherence is a UK-based digital consultancy helping organisations in regulated industries unlock the full potential of existing and emerging marketing technologies. We combine strategic insight with technical expertise to deliver measurable outcomes.
+
+---
+
+## Home
+
+We make it make sense.
+
+We help organisations in regulated industries unlock the full potential of existing and emerging marketing technologies.
+
+### Case Study: Future-proofing British business
+Empowering British Business Bank to empower small UK businesses.
+
+### An operating system for your business.
+We pair human expertise with agentic intelligence — specialist AI agents and automated pipelines that work alongside our team, continuously. The result: faster decisions, better outcomes, and a digital presence that never stands still.
+
+#### The 5C Model
+
+- Consulting (Understand): Human strategists and AI agents map your stakeholders, audiences and market — then keep that picture current, continuously. Not a one-off audit; a living understanding of your organisation.
+- Concept (Design): Research-led propositions shaped by human creativity and validated by data agents that test, learn and refine. From insight to prototype, every decision backed by evidence.
+- Code (Build): Secure technology platforms assembled by engineers, maintained by automated pipelines that monitor, patch and optimise around the clock. Your platform rebuilt in days, not months.
+- Context (Measure): Real-time dashboards and decision agents that surface what's working, what isn't, and what to do about it — not quarterly, but always. Every metric tied to a business outcome.
+- Care (Run): Your digital platform is never finished. Our operations layer keeps it secure, performant and continuously improving — agent-assisted, human-governed.
+
+### Case Study: This is how we do it
+Our work with Bayer Consumer Health is a typical example of helping regulated industry clients simplify complexity and reduce technical debt.
+- 460 sites re-platformed to a single codebase
+- 40% increase in speed to market
+- 581% increase in organic visibility
+- $15m saved over 3 years
+
+### Always On: Your website is never finished
+We run and continuously improve complex websites so they remain secure, performant and valuable to your organisation. Rather than periodic redesigns, Always On treats your website as a living digital platform — with continuous operational discipline, proactive optimisation and data-driven improvement.
+- Run: Proactive monitoring, security updates, performance and resilience management
+- Improve: Continuous optimisation of user journeys, accessibility, performance and outcomes
+- Govern: Monthly reporting, backlog prioritisation and quarterly roadmap reviews
+
+### Case Study: Plugged in to the winds of change
+Transforming National Grid's Digital Foundation: A Complete Website Rebuild for Enhanced User Experience and Operational Efficiency.
+
+"The new platform provides us with the agility and scalability we need to continuously improve our user experience while significantly reducing our operational complexity. We now have a modern, future-proof foundation that enables us to focus on innovation rather than maintenance." — National Grid Digital Team
+
+### Clients include
+Bayer, British Business Bank, ParalympicsGB, Stanley Black & Decker, National Grid, Rail Delivery Group.
+
+### Contact Us
+Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to hear from you!
+
+---
+
+## Capabilities
+
+An operating system for your business.
+
+We combine human expertise with agentic intelligence — specialist AI agents and automated pipelines working alongside our team to run, improve and govern your digital platforms continuously.
+
+### 5C Disciplines
+
+#### Consulting — Understand
+Human strategists and AI agents map your stakeholders, audiences and market — then keep that picture current, continuously. Not a one-off audit; a living understanding of your organisation.
+
+#### Concept — Design
+Research-led propositions shaped by human creativity and validated by data agents that test, learn and refine. From insight to prototype, every decision backed by evidence.
+
+#### Code — Build
+Secure technology platforms assembled by engineers, maintained by automated pipelines that monitor, patch and optimise around the clock. Your platform rebuilt in days, not months.
+
+#### Context — Measure
+Real-time dashboards and decision agents that surface what's working, what isn't, and what to do about it — not quarterly, but always. Every metric tied to a business outcome.
+
+#### Care — Run
+Your digital platform is never finished. Our operations layer keeps it secure, performant and continuously improving — agent-assisted, human-governed.
+
+### Accreditations
+- Crown Commercial Services Supplier
+- Cyber Essentials Plus
+- Greenly
+- ISO 9001
+- Living Wage Employer
+- MemberWise Recognised Supplier 2025
+
+### Technology Partners
+
+#### Acquia
+As one of the preeminent Acquia Partners in the UK, we are the first and most prolific adopter of the Site Studio accelerator to elevate the capabilities of Drupal. We are experts in the Acquia PaaS infrastructure.
+
+#### Amazon Web Services
+We are experts in auto-scaling cloud infrastructure, serverless solutions and agentic artificial intelligence platforms on one of the world's biggest hosting platforms.
+
+#### Drupal
+The open source .php behemoth behind countless high profile websites. We use Drupal DXP to power multi-site applications at a single codebase.
+
+#### Google Cloud
+As Google Cloud Partners, we offer scalable, secure, enterprise AI solutions.
+
+#### Umbraco
+Scalable, secure, enterprise open source DXP solutions on the .NET Azure platform.
+
+### Coherence Pipelines
+Automated, transparent, continuous. Every pipeline combines AI agents with human oversight — so you get speed without sacrificing control.
+
+#### Code Ops
+Site migration, design system extraction, headless builds and enrichment. Your website rebuilt in days not months — scanned, extracted, rebuilt and enriched by agents, reviewed by humans.
+
+#### Content Ops
+Content migration, research, drafting, enrichment and evaluation. Content that writes itself — researched, drafted and optimised by AI, approved by your team.
+
+#### Decision Ops
+Request routing, task estimation, value assessment and prioritisation. Every request triaged, estimated and routed in minutes — not stuck in an inbox.
+
+#### Security Ops
+Monitoring, patching, permissions and compliance scanning. Continuous security, not annual audits — vulnerabilities found and fixed before they matter.
+
+#### Context Ops
+Shared state, knowledge graphs and cross-pipeline intelligence. Every agent knows what every other agent knows — no silos, no repeated questions.
+
+### Ready to make it make sense?
+Let's discuss how we can help transform your digital presence.
+
+---
+
+## Case Studies
+
+Real results for real organisations. See how we help clients simplify complexity and unlock potential.
+
+### The future of hospitality is here. Marriottopia.
+Client: Marriott
+Tags: Hospitality, AI, Innovation
+
+In March 2024, Marriott hosted Marriottopia, its inaugural major conference in six years, bringing together over 800 senior leaders to explore hospitality's future direction.
+
+#### Introducing the Digital Human
+Coherence developed an AI-driven, voice-interactive avatar embodying the "Customer of the Future." The system leveraged Marriott-specific training data to engage in spontaneous, contextually relevant conversations during live panel discussions.
+
+#### Technology Integration and Innovation
+The solution integrated large language models, natural language processing, and custom middleware to maintain brand voice and personality. Response latency improved from 20 seconds to real-time. Audiovisual infrastructure was optimised for speech intelligibility and visual quality across a 20x5 metre stage.
+
+#### Human-Machine Interaction
+Panelists received specialised coaching to facilitate natural dialogue with the digital character, enabling authentic, unscripted exchanges that connected with attendees.
+
+#### Conference-Wide AI Hosting
+A second avatar named Obaya served as digital master of ceremonies, introducing sessions, facilitating participant navigation, and handling logistical announcements with personality consistency.
+
+### Helping the UK's Drive to Net Zero by Enabling National Grid's Multi-Site Strategy
+Client: National Grid
+Tags: Energy, Infrastructure, Sustainability
+
+National Grid operated four separate Content Management Systems across business units, creating operational inefficiencies and inconsistent user experiences.
+
+#### The Challenge
+Their primary website suffered from poor mobile navigation, contained over 250 outdated pages, and lacked flexibility for rapid content updates. The organisation needed to consolidate these systems, improve usability, and reduce development costs while preparing infrastructure to migrate their US site to the same platform.
+
+#### Strategic Platform Consolidation
+Rather than modifying existing infrastructure, a complete rebuild using Acquia's Site Studio was implemented. This eliminated technical debt and streamlined four CMS platforms into one consolidated system.
+
+#### Enhanced User Experience
+Redesigned mobile navigation to eliminate overlapping issues. Removed 250+ outdated pages through comprehensive content audit. Implemented design consistency and UX standards platform-wide.
+
+#### Low-Code Development
+Site Studio's visual interface enabled rapid page creation and editing, reduced development resource dependency, and allowed content teams to build complex layouts independently with reusable design patterns.
+
+"The new platform provides us with the agility and scalability we need to continuously improve our user experience while significantly reducing our operational complexity. We now have a modern, future-proof foundation that enables us to focus on innovation rather than maintenance." — National Grid Digital Team
+
+Technologies: Acquia, Amazon Web Services, Drupal
+
+### Empowering British Business Bank with Scalable and Unified Digital Experiences
+Client: British Business Bank
+Tags: Finance, Banking, Government
+
+The UK's government-owned economic development bank supporting smaller businesses through loans, guarantees, and venture capital via subsidiaries including British Patient Capital.
+
+#### The Challenge
+The UK government announced a £365 million Future Fund: Breakthrough scheme in March 2021. British Patient Capital needed to launch the programme aligned with the Chancellor's Budget speech under strict confidentiality and an immovable deadline. Meanwhile, BBB's digital ecosystem was complex and inconsistent — multiple sites served different audiences creating fragmented experiences.
+
+#### Our Approach
+Audience-centred design clarified information needs. A modular, component-based approach enabled rapid delivery and reusability. Discovery and audit phases included stakeholder interviews, technical analysis, and content audits to streamline navigation and create a unified platform vision.
+
+#### From Transformation to Optimisation
+A single platform now powers the rationalised web estate with low-code editing for instantaneous publishing by non-technical editors. Decentralised publishing empowers business unit editing teams while centralised governance maintains brand, accessibility, UX, and technical oversight.
+
+"From the outset, Coherence understood the time-sensitive, confidential nature of the project. They delivered on time and on budget with no complications." — Amanda Madigan, British Business Bank
+
+Technologies: Acquia, Drupal
+
+### Accelerating Bayer's Digital Transformation with a Global Primary Design System
+Client: Bayer
+Tags: Pharmaceuticals, Global, Design Systems
+
+Bayer modernised its digital ecosystem to support 23 brands and hundreds of localised sites worldwide. The company needed a unified solution delivering brand consistency, streamlined operations, and marketing agility while dramatically accelerating time-to-market.
+
+#### The Challenge
+As their legacy platform reached end-of-life, Bayer faced urgent modernisation needs. Decentralised hosting created inefficiencies and governance gaps. Inconsistent brand implementation diluted global standards. Site creation was slow, requiring developer support at every stage.
+
+#### Primary Design System
+Built a scalable design system as single source of truth for branding. Introduced reusable layout patterns and templates. Enabled local customisation while maintaining global consistency.
+
+#### Acquia Site Studio Integration
+Implemented low-code editing experience reducing developer reliance. Equipped marketers with real-time page building and publishing capabilities. Leveraged Style Guide Manager for multi-brand theming.
+
+Results:
+- 460 sites re-platformed to a single codebase
+- 40% increase in speed to market
+- 581% increase in organic visibility
+- $15m saved over 3 years
+
+"I have to say, Coherence really know what they're doing..." — David Addeo, Global Head of Consumer Platform, Bayer Consumer Health
+
+Technologies: Acquia, Drupal
+
+---
+
+## Company
+
+Our people. Your people.
+
+Coherence brings together expertise from Strategy, Data, Experience Design, Creative, Marketing, Technology and Operations to help clients realise their digital potential.
+
+### Leadership Team
+- Julian Tedstone — Strategy
+- Natalie Osborn — Operations
+- Isidro Garrido — Technology
+- Ali Moore — Delivery
+- Emily Baines — Marketing
+
+### Part of Something Bigger: Cohaesus Group
+As a member of the multi-award-winning Cohaesus Group, Coherence has access to a vast network of specialist capabilities globally, spanning creativity, technology and marketing services.
+
+---
+
+## Content
+
+Articles, podcast episodes and events from the Coherence team on digital transformation, marketing technology and regulated industries.
+
+### Stay in the loop
+Follow us on LinkedIn for the latest articles, podcast episodes and insights from the Coherence team.
+
+---
+
+## Articles
+
+Insights, analysis and thought leadership from the Coherence team on digital transformation, marketing technology and regulated industries.
+
+### Your Website Rebuilt in Days, Not Months
+By Julian Tedstone, 15 March 2026
+
+Replatforming used to mean eighteen months of discovery, migration headaches and a launch that was already out of date. Pop-up design systems change the equation entirely. Here is how we extract, build and deploy a governed front end in days.
+
+#### The Replatforming Trap
+Most organisations dread the word replatform. It conjures images of twelve-month programmes, frozen roadmaps and a go-live that feels more like a relief effort than a celebration. The problem is not the technology. It is the approach. Traditional migrations treat every site as a bespoke construction project. Every page is hand-built. Every component is debated. Every CMS quirk becomes a blocker. By the time the new site launches, the business has moved on and the whole cycle starts again.
+
+#### What a Pop-up Design System Actually Is
+A pop-up design system starts with what you already have. We scan your live site, extract its visual language into design tokens (colours, typography, spacing, grid) and generate a governed component library. That library is headless. It does not care whether the back end is Drupal, Umbraco, Wagtail or a static API. It deploys anywhere that exposes content through an API. The result is a brand-consistent, accessible, performant front end that your editors can populate immediately. No six-month build. No waterfall handover. Days.
+
+#### Why This Matters for Enterprise and Public Sector
+If you manage a complex web estate with multiple brands, markets or services, the maths changes dramatically. Instead of rebuilding each site individually, you extract one design system and deploy it across every channel. Bayer did this across 23 consumer health brands. National Grid consolidated four legacy CMSs into a single governed platform. For public sector organisations managing dozens of service sites under one brand, this approach means consistent citizen experiences, WCAG compliance baked in, and teams that can launch new services in days rather than quarters.
+
+#### The Five-Day Pattern
+Day one: scan the live estate and extract tokens. Day two: generate the component library and validate against brand guidelines. Day three: connect the headless front end to the content API. Day four: populate, test, refine. Day five: go live. This is not a thought experiment. It is a repeatable pipeline we call CodeOps, and it runs the same way every time. The speed comes not from cutting corners but from eliminating the decisions that slow every traditional project down.
+
+### The End of the Annual Redesign
+By Julian Tedstone, 15 March 2026
+
+The three-year redesign cycle was never a technology problem. It was an operational one. Continuous improvement is not a philosophy. It is a delivery model. Here is what it looks like in practice.
+
+#### The Redesign Cycle Is Broken
+Every three to five years, organisations commission a major website redesign. The brief is always some version of "modernise the platform, improve the user experience, consolidate the technical debt." The agency delivers. Everyone celebrates. Then the slow decline begins. Small compromises accumulate. Content drifts from the design intent. Performance degrades. Accessibility regresses. Within eighteen months the conversation starts again: "We need a redesign."
+
+#### Why Continuous Improvement Is Different
+Continuous improvement is not the same as ongoing support. Support is reactive. Someone reports a bug, you fix it. Continuous improvement is proactive. It means reviewing analytics every month and translating findings into prioritised enhancements. It means running accessibility audits on a schedule, not before a compliance deadline. It means optimising page speed as browsers and devices evolve, not as a one-off project. The website is a product, not a project. It has a backlog, a cadence and a team.
+
+#### The Run, Improve, Govern Model
+We structure this around three interlocking activities. Run covers the operational basics: monitoring, patching, security updates, performance management. Improve is the proactive layer: user journey optimisation, content improvements, new feature development, all prioritised by impact. Govern provides the discipline: monthly reporting, quarterly roadmap reviews, backlog prioritisation. Together these three activities mean the website gets measurably better every month. Not every three years. Every month.
+
+#### What This Means for Your Budget
+The total cost of continuous improvement is typically lower than the boom-and-bust redesign cycle. Instead of a large capital outlay every few years (with diminishing returns between cycles), you invest a steady operational budget that delivers compounding value. Your platform never falls behind. Your team never has to manage a painful migration. Your users never have to relearn an interface that changed overnight. The economics are better. The outcomes are better. The experience is better.
+
+### What Happens When Your Agents Talk to Each Other
+By Isidro Garrido, 15 March 2026
+
+Most organisations deploying AI have agents working in isolation. A content agent here, a security scanner there, a reporting bot somewhere else. The real value unlocks when they share context. We call that layer ContextOps.
+
+#### The Silo Problem, Again
+Organisations spent the last decade breaking down data silos between departments. Now the same pattern is repeating with AI agents. Marketing has a content generation tool. IT has a vulnerability scanner. Operations has a monitoring dashboard. None of them talk to each other. The content agent does not know the security team just patched a critical vulnerability on the page it is about to update. The monitoring system does not know a major content migration is underway, which is why traffic patterns look unusual. Each agent is individually useful but collectively blind.
+
+#### What ContextOps Does
+ContextOps is the connective tissue between every pipeline we operate. It maintains a shared state: what has changed, what is being worked on, what decisions have been made, and why. When the CodeOps pipeline deploys a new component, ContextOps records it. When SecurityOps flags a dependency update, ContextOps routes that information to ContentOps so editors know which pages might be affected. When DecisionOps triages a new request, it already has the full picture of what is in flight.
+
+#### A Practical Example
+A client asks us to add a new service page to their site. Without ContextOps, this triggers a chain of disconnected tasks: brief a copywriter, design the page, build it, test it, deploy it, monitor it. Each step waits for the last. With ContextOps, the request enters DecisionOps and is automatically enriched with context: the design system already has the right components, ContentOps has drafted initial copy based on existing service descriptions, SecurityOps has confirmed the deployment environment is clean. What used to take two weeks takes two days. Not because anyone rushed. Because nothing was repeated.
+
+#### Why This Matters at Scale
+For organisations managing large digital estates, the compounding effect of shared context is transformative. Every pipeline gets faster because it does not start from scratch. Every decision is better because it is informed by the full picture. Every audit is simpler because the decision log is comprehensive and automatic. Context is not a nice-to-have. For any organisation serious about operating AI at scale, it is infrastructure.
+
+### 47 Microsites, One Design System
+By Ali Moore, 15 March 2026
+
+Large organisations accumulate microsites like barnacles on a hull. Each one made sense at the time. Together they create an ungovernable, inconsistent, expensive mess. There is a better way.
+
+#### How We Got Here
+It usually starts innocently. A campaign needs a landing page. A product launch needs its own site. A regional team builds something locally because the central platform cannot move fast enough. Five years later you have 47 microsites on six different platforms, three of which are no longer supported. Each has its own design, its own hosting, its own security posture. Nobody has a complete inventory. Updating the brand across all of them would take months of agency time. So it does not happen.
+
+#### The Consolidation Mistake
+The instinct is to consolidate everything onto one platform. This is usually the right destination but the wrong approach. Traditional consolidation means a massive migration programme: audit everything, prioritise, migrate content, decommission old sites. It takes a year or more. Teams resist because they lose autonomy. By the time you finish, three new microsites have appeared. The pattern repeats.
+
+#### Design System as Governance Layer
+The alternative is to govern at the design system level, not the platform level. Extract your brand into a portable, headless design system. Deploy that system as the front end for every site, regardless of what CMS sits behind it. The content stays where it is. The editors keep their tools. But every user-facing page now renders through a single, governed component library. Brand consistency, accessibility compliance and performance standards are enforced by the system, not by process documents that nobody reads.
+
+#### What Changes
+The brand team gets a single source of truth for digital brand expression. The security team gets a unified front end to audit instead of 47 separate attack surfaces. The content teams keep their preferred CMS. The finance team stops paying for 47 sets of hosting, monitoring and maintenance. And when the brand evolves, you update the design system once and every site reflects the change. Not in six months. That afternoon.
+
+### Run, Improve, Govern: A New Model for Website Operations
+By Natalie Osborn, 15 March 2026
+
+Website support retainers have barely changed in twenty years. You pay a monthly fee. You raise tickets. Someone fixes things when they break. It is time for a better model.
+
+#### The Support Retainer Problem
+Traditional website support is a cost centre. Organisations pay for a bank of hours, use them reactively, and struggle to demonstrate value at renewal time. The conversation is always about utilisation rates and ticket volumes rather than outcomes. Teams end up hoarding hours for emergencies rather than investing them in improvements. The website stagnates. The retainer renews out of inertia rather than conviction. Everyone knows this is not working, but the alternative has never been clearly articulated.
+
+#### Run: Keeping the Lights On, Properly
+The Run layer covers everything needed to keep a complex website secure, stable and performant. Proactive monitoring rather than waiting for users to report problems. Security patching on a defined schedule rather than when someone remembers. Performance tracking against real baselines rather than arbitrary targets. Backup and resilience management that is tested, not assumed. This is not glamorous work, but it is the foundation everything else depends on. Get it wrong and nothing else matters.
+
+#### Improve: Making It Better, Continuously
+The Improve layer is where value compounds. Each month we review analytics, identify the highest-impact opportunities and implement improvements. That might mean optimising a key user journey that is leaking conversions. It might mean remediating accessibility issues before they become compliance problems. It might mean implementing structured data that improves search visibility. The point is that improvement is systematic, prioritised and continuous. Not a wish list. A backlog with clear criteria and measurable outcomes.
+
+#### Govern: The Discipline That Makes It Work
+Governance is the layer most organisations are missing. Monthly operational reports that show what was done, what changed, and what it meant. Quarterly roadmap reviews that align improvement priorities with business objectives. Backlog prioritisation that balances quick wins with strategic investments. Without governance, run becomes routine and improve becomes ad hoc. With it, the website becomes a managed business asset that demonstrably improves over time. That is a conversation worth having at renewal.
+
+### A special message from Coherence Santa
+By Coherence, 9 December 2025
+
+As 2025 draws to a close, the Coherence team reflects on an extraordinary year of growth, innovation and the partnerships that made it all possible.
+
+#### A Year of Growth
+From launching new digital platforms for global brands to expanding our team with some of the brightest minds in the industry, 2025 has been a year to remember. We've delivered transformative projects across regulated industries, from financial services to the public sector, and we're proud of the impact our work has had.
+
+#### Looking Ahead
+As we head into 2026, we're more excited than ever about the opportunities ahead. With new partnerships, expanded capabilities, and a renewed commitment to our 5C methodology, we're ready to help even more organisations navigate their digital transformation journeys. From all of us at Coherence — have a wonderful holiday season.
+
+### The Future of Hospitality Technology: Why Connection Matters
+By Emily Baines, 7 October 2025
+
+The hospitality industry is undergoing a technological revolution, but the most successful implementations keep human connection at the centre of every digital touchpoint.
+
+#### Technology as an Enabler
+In hospitality, technology should never replace the warmth of a personal welcome. Instead, it should enable staff to deliver exceptional experiences more consistently. From booking engines that remember guest preferences to CMS platforms that let local teams tell their own stories, the best tech is invisible to the end guest while empowering the people behind the scenes.
+
+#### The Connected Guest Journey
+Modern guests expect a seamless journey from discovery to check-out. That means a website that performs beautifully on mobile, a booking flow that feels effortless, and communications that feel personal rather than automated. The properties that get this right see dramatic improvements in direct bookings and guest satisfaction scores.
+
+#### Building for the Future
+Composable architecture is enabling hospitality brands to move faster than ever. By decoupling the content management layer from the booking engine and loyalty programme, operators can iterate on the guest experience without risking critical transactional systems. It's the kind of pragmatic architecture that delivers real competitive advantage.
+
+### Design Systems for the Public Sector — A Critical Tool for Modern Governance
+By Julian Tedstone, 5 September 2025
+
+Design systems are transforming how public sector organisations deliver digital services — ensuring consistency, accessibility and efficiency across hundreds of services and touchpoints.
+
+#### Why Design Systems Matter in Government
+Government digital services are used by everyone. Unlike commercial products where users can switch to a competitor, citizens have no choice but to use the services provided. That places a profound responsibility on the teams building these services to ensure they are accessible, consistent and trustworthy. A well-implemented design system is the foundation for meeting that responsibility at scale.
+
+#### Beyond a Component Library
+A design system is far more than a collection of buttons and form fields. It codifies an organisation's design principles, accessibility standards and content patterns into a single source of truth. When done well, it reduces duplication of effort across teams, accelerates delivery, and ensures that every citizen interaction meets a consistent standard of quality.
+
+#### Implementation Challenges
+The biggest challenge in public sector design systems isn't technical — it's organisational. Getting buy-in from multiple departments, each with their own priorities and legacy systems, requires patient stakeholder engagement and a clear demonstration of value. The organisations that succeed treat their design system as a product with its own roadmap, team and governance.
+
+### What is Technical Debt and Why Does it Kill Your Marketing Agility?
+By Julian Tedstone, 5 September 2025
+
+Technical debt is the silent killer of marketing agility. Here's how to identify it, measure its impact, and build a business case for paying it down.
+
+#### What is Technical Debt?
+Technical debt is the accumulated cost of shortcuts, workarounds and deferred maintenance in your technology stack. Like financial debt, it accrues interest: every new feature takes longer to build, every change carries more risk, and your team spends more time fighting the platform than using it. For marketing teams, this manifests as campaigns that take weeks instead of days, content updates that require developer involvement, and integrations that simply don't work.
+
+#### The Marketing Impact
+When your CMS is slow, your editors lose confidence. When your analytics pipeline is fragile, your data-driven decisions become guesswork. When your personalisation engine requires IT tickets to update segments, your customer experience falls behind competitors who can move in real time. Technical debt doesn't just slow down developers — it throttles the entire marketing operation.
+
+#### Building the Business Case
+The key to addressing technical debt is making the invisible visible. Map the time your team wastes on workarounds. Quantify the campaigns that couldn't launch on time. Document the integrations that fail silently. Once leadership can see the cost in lost revenue and wasted effort, the investment in modernisation becomes an obvious business decision rather than a technical indulgence.
+
+### Your Digital Transformation Needs a Platform
+By Julian Tedstone, 11 March 2019
+
+True digital transformation isn't about individual projects — it's about building a platform that enables continuous evolution and empowers every team in your organisation.
+
+#### Projects vs Platforms
+Most organisations approach digital transformation as a series of projects: redesign the website, implement a new CRM, migrate to the cloud. But projects have end dates, and when they finish, the organisation is left with a snapshot of what was needed at that moment. A platform approach instead creates the foundations for continuous improvement, giving teams the tools and infrastructure to evolve at their own pace.
+
+#### The Platform Mindset
+A platform mindset means thinking about capabilities rather than deliverables. Instead of asking "what website do we need?", ask "what content management capabilities does the organisation need?" Instead of specifying a CRM migration, define the customer data and insight capabilities that will drive growth. This shift in framing opens up architecture decisions and vendor choices that project-thinking would miss.
+
+#### Making It Real
+Start by mapping your organisation's digital capabilities against maturity levels. Identify the gaps between where you are and where you need to be. Then build a roadmap that prioritises the capabilities with the highest impact, using composable architecture patterns that allow each capability to evolve independently. The result is a platform that grows with your organisation rather than constraining it.
+
+---
+
+## Podcast — Digital Transformation Survivors
+
+Real conversations about the challenges, triumphs and hard lessons of digital transformation in regulated industries.
+
+### About the Podcast
+Digital Transformation Survivors explores the real human side of technology change. We talk to practitioners, leaders and specialists who have navigated complex digital transformations and lived to tell the tale.
+
+From strategy to execution, we cover the decisions, setbacks, and breakthroughs that define successful digital programmes in highly regulated environments.
+
+Available on YouTube, Spotify, and Apple Podcasts.
+
+### Season 2 — Latest Episodes
+
+- S2 E10: Scott Brinker on AI agents, AEO and the new buyer journey (19 November 2025) — The godfather of Martech joins the show. Scott Brinker unpacks the seismic shift from SEO to Answer Engine Optimisation, explains why AI agents are about to reshape the buyer journey, and shares what the next era of marketing technology really looks like — from someone who's been mapping it for two decades.
+
+- S2 E9: From 2,000 Sites to One: Nestle's Drupal Journey with Antonella Severo (4 November 2025) — How do you wrangle 2,000 websites into something manageable? Ask Antonella Severo. As the driving force behind Nestle's global web platform, she took on one of the biggest Drupal consolidation projects on the planet — and lived to tell the tale.
+
+- S2 E8: How Membership Organisations Shape Their Digital Future (22 October 2025) — Alan Perestrello from HartSquare has spent years helping membership organisations and charities navigate the minefield of Martech and CRM.
+
+- S2 E7: Building the House, Furnishing 43 Markets: Helga Eriksson on Global Web and AI Shift (9 October 2025) — Helga Eriksson knows what it takes to build a global digital presence — she's done it across 43 markets.
+
+- S2 E6: Leading with Empathy: Alessandra Canavesi on Digital Marketing for Global Investors (18 September 2025) — Alessandra Canavesi leads digital marketing at AXA Investment Managers with something refreshingly rare in financial services: genuine empathy.
+
+- S2 E5: Cutting Through the Noise: Agility, MVPs, and Methods That Matter (17 September 2025) — A no-nonsense look at what agility actually means when you strip away the buzzwords.
+
+- S2 E4: Sheep-Dip Agile and the Cost of Doing It Wrong (9 July 2025) — What happens when organisations 'do agile' without actually being agile? We coined a term for it: sheep-dip agile.
+
+- S2 E3: From Consultant to Catalyst: Rethinking Transformation with Purpose (11 July 2025) — The consulting industry has a problem: too many decks, not enough doing.
+
+- S2 E2: Composability, Consolidation, and the CMS You Really Need (14 July 2025) — The CMS landscape is fracturing — or is it consolidating?
+
+- S2 E1: Thriving Through Change: Product Leadership in Payments Space (17 June 2025) — Paul Taylor has spent 14 years in the trenches of digital payments at Worldline.
+
+### Season 1 — Where It All Began
+
+- S1 E11: People, Process, Platform: The Real Work of Digital Evolution (12 May 2025) — The classic trio — people, process, platform — but in the right order.
+
+- S1 E10: Balancing Local Execution and Global Strategy in Digital Experience Platforms (12 April 2025) — How do you maintain a coherent global digital strategy while giving local teams the freedom to execute?
+
+- S1 E9: Balancing Brand, Culture, and Clarity in a Global Comms Strategy (11 April 2025) — Brand, culture, and clarity — three things that should be inseparable in a global comms strategy.
+
+- S1 E8: Building Digital for Everyone: National Grid's Shift to Product Thinking (10 April 2025) — Simon Sanett takes us inside National Grid's shift from project-based delivery to product thinking.
+
+- S1 E7: Balancing Agility and Governance at the British Business Bank (9 April 2025) — Adam Bird from the British Business Bank shares how a public institution can embrace agility without throwing governance out the window.
+
+- S1 E6: What's the Key to Robust User Research & Responsible AI in Digital Transformation? (31 March 2025) — In the final instalment with Dr. Jon Sykes, we tackle the big questions: how do you do proper user research when your users span 200+ countries?
+
+- S1 E5: What's the Power of Human-Centred Design in UK Government Digital Transformation? (30 March 2025) — Dr. Jon Sykes digs into why human-centred design isn't just a nice-to-have in government.
+
+- S1 E4: Reimagining Digital Services in Government — With People at the Center (28 March 2025) — Dr. Jon Sykes has been at the sharp end of government digital transformation at the FCDO.
+
+- S1 E3: Behind the Scenes of a Multilingual Platform: Insights from AuPairWorld (27 March 2025) — Sara Redondo Pizarro from AuPairWorld reveals the hidden complexity behind building a platform that works seamlessly in multiple languages.
+
+- S1 E2: Why Editor Empowerment and Sustainability Matter in Modern CMS Strategy (27 February 2025) — Why does the CMS your editors actually enjoy using matter more than the one with the best feature list?
+
+- S1 E1: Navigating Composable Complexity with Umbraco's CTO Filip Bech-Larsen (20 February 2025) — Umbraco's CTO Filip Bech-Larsen kicks off Season 1 with a deep dive into composable architecture.
+
+### About the Host
+Coherence's Strategy Director, Julian Tedstone, meets with icons, giants, legends and pioneers of digital transformation to elicit insights from their vast experience that you can apply to your own digital transformation journey.
+
+---
+
+## Events
+
+Conferences, speaking engagements and industry events where you can connect with the Coherence team.
+
+### Hospitality Tech Expo
+Date: Sep 30 – Oct 1, 2025
+Time: 09:00 – 18:00
+Location: Excel London, E16 1XL
+
+### TechSmart
+Date: Sep 23, 2025
+Time: 08:20 – 18:00
+Location: Leonardo Royal St Paul's, 10 Godliman Street, London EC4V 5AJ
+
+---
+
+## Net Zero Commitment
+
+We are committed to reducing our environmental impact and achieving net zero carbon emissions by 2030.
+
+### Where We Stand
+Our measured carbon baseline is 23 tCO2e, tracked and verified through Greenly, our carbon accounting partner. Our target is to reach net zero by 2030 through a structured reduction and offsetting programme.
+- 23 tCO2e baseline
+- 2030 net zero target
+
+### Our Four Pillars
+
+#### Measure
+Comprehensive carbon accounting across Scope 1, 2 and 3 emissions using Greenly, giving us a clear and verified picture of our footprint.
+
+#### Reduce
+Active reduction of emissions from operations, travel, digital infrastructure and supply chain through targeted initiatives and policy changes.
+
+#### Offset
+Residual emissions are offset through verified carbon removal projects, while we continue to drive absolute reductions year on year.
+
+#### Advocate
+We integrate sustainability into our technology recommendations, favouring energy-efficient infrastructure and optimised digital experiences.
+
+### Our Seven-Point Commitment
+1. Measure and publicly report our carbon footprint annually
+2. Reduce absolute emissions by at least 50% before 2030
+3. Prioritise renewable energy across all offices and infrastructure
+4. Minimise business travel and favour low-carbon alternatives
+5. Integrate sustainability criteria into procurement decisions
+6. Offset remaining emissions through verified carbon removal
+7. Support our clients in reducing their own digital carbon footprint
+
+---
+
+## Always On
+
+Continuous website management, optimisation and governance by Coherence. Redirects to alwayson.coherence.digital.
+
+---
+
+## Contact
+
+We'd love to hear from you. Do you have a question about our services or need to discuss a new project with our team? We're here to help.
+
+### Contact Details
+- Email: hello@coherence.digital
+- Phone: +44 7822 011613
+- WhatsApp: Message us on WhatsApp
+- LinkedIn: https://www.linkedin.com/company/coherence-digital/
+
+### Our Offices
+
+#### London
+Rivvia, 11 Slingsby Place, London, WC2E 9AB
+Covent Garden Tube — 3 min
+
+#### Edinburgh
+Jamaica Yard, 3 Jamaica Street, Edinburgh, EH3 6HH
+Edinburgh Waverley — 6 min
+
+#### New York
+500 7th Avenue, New York, NY 10018
+Madison Square Garden — 8 min
+
+#### Bournemouth
+SmartBase, Aviation Park West, Christchurch, BH23 6NW
+Bournemouth Station — 25 min
+
+---
+
+## Privacy Policy
+
+### Who we are
+Coherence is a trading name of Coherence Consulting Limited, registered in the United Kingdom (Company No. 13606667). Our registered office is at Towngate House, 2-8 Parkstone Road, Poole, Dorset, BH15 2PW.
+
+### What data we collect
+When you use our contact form we collect your name, email address and message content solely to respond to your enquiry.
+
+### Cookies and analytics
+We use cookies to understand how visitors interact with our site. When you first visit, analytics and marketing cookies are disabled by default. You can choose to accept all cookies or use only essential cookies via the consent banner.
+
+Analytics cookies: We use Google Analytics 4 to measure page views and site usage.
+Marketing cookies: We use the LinkedIn Insight Tag to measure the effectiveness of our LinkedIn campaigns.
+
+You can withdraw consent at any time by clearing your browser cookies and revisiting the site.
+
+### How we use your data
+Personal data submitted through our contact form is used exclusively to respond to your enquiry. We do not sell, rent or share your personal data with third parties for marketing purposes.
+
+### Data retention
+We retain contact form submissions for up to 12 months after the enquiry has been resolved, after which they are securely deleted.
+
+### Your rights
+Under UK GDPR you have the right to access, rectify or erase your personal data, restrict processing, and data portability. To exercise any of these rights, contact us at hello@coherence.digital.
+
+---
+
+## Terms & Conditions
+
+Coherence is a trading name of Coherence Consulting Limited, registered in England under number 13606667, with registered office at Towngate House, 2-8 Parkstone Road, Poole, Dorset, BH15 2PW. We provide digital services to business clients.
+
+These Terms and Conditions shall apply to the provision of services by the Service Provider to its clients.
+
+### 1. Interpretation
+- Agreement: The contract between the client and Coherence Consulting Ltd per these Conditions, the Order, and Statement of Work.
+- Client Materials: Text, images, designs, software, code, data, and other materials provided by the client.
+- Confidential Information: Trade secrets, business information, and proprietary data marked confidential or reasonably assumed confidential.
+- Data Protection Law: The UK GDPR, the Data Protection Act 2018, and any successor legislation.
+- Fees: Payment amounts stated in the Agreement.
+- Intellectual Property: Patents, trademarks, copyrights, databases, domain names, and similar protections worldwide.
+- Personnel: Directors, employees, agents, and contractors.
+- Services: Services described in the Order and Statement of Work.
+
+### 2. Conditions
+2.1 The Agreement governs the relationship and replaces all prior agreements regarding Services.
+2.2 Coherence Consulting Ltd provides Services per the Agreement with applicable fees.
+2.3 Services are provided with reasonable care and skill, in a diligent, prompt and professional manner. Nonconforming Services will be rectified at no extra charge.
+2.4 Coherence Consulting Ltd uses reasonable endeavours to meet any performance targets specified. However, the company makes no promises regarding achievement of results or objectives.
+2.5 Amendments require written notification and signatures from both parties, clearly identifying changes and fees.
+2.6 Neither party is prevented from engaging similar agreements with third parties before, during, or after the term.
+
+### 3. Client's Obligations
+During the Agreement term, clients must:
+- Ensure their team collaborates with Coherence Consulting Ltd regarding Services.
+- Promptly provide required assets including information, passwords, materials, data, and documents.
+- Procure necessary copyright licences and consents for provided information and materials.
+
+### 4. Fees and Payment
+4.1 Fees are due within 30 days of invoice date.
+4.2 Fees are exclusive of VAT.
+4.3 Fees exclude travel, hotel, subsistence, and external service costs unless expressly agreed in writing.
+4.4 Unpaid fees entitle Coherence Consulting Ltd to pursue legal action where appropriate.
+
+### 5. Confidentiality
+5.1 Each party must keep the other's Confidential Information confidential and secret. Information may only be used to perform obligations under the Agreement. Employees must be informed of confidentiality obligations.
+5.2 Confidentiality obligations do not apply to information that was known before disclosure, is publicly available, or is required to be disclosed by court order.
+
+### 6. Personal Data
+6.1 When Services require processing Personal Data on the client's behalf, Coherence Consulting Ltd acts as a processor and shall comply with client instructions, ensure appropriate technical and organisational measures, ensure reliability of employees accessing Personal Data, immediately inform clients of breaches, and not sub-contract or transfer processing without prior written consent.
+
+### 7. Intellectual Property
+7.1 Clients retain Intellectual Property Rights in Client Materials.
+7.2 Coherence Consulting Ltd owns all Intellectual Property Rights in its materials and pre-existing property.
+7.3 When pre-existing property is incorporated into Services, clients receive a personal, non-exclusive, royalty-free, perpetual, irrevocable, worldwide licence for use.
+7.4 All materials are deemed Confidential Information, except open source software.
+
+### 8. Indemnity
+Each party indemnifies the other against losses resulting from claims that Services provision infringes third-party Intellectual Property or breaches Data Protection Law.
+
+### 9. Restriction
+During the Agreement and 6 months after termination, clients shall not entice away persons employed or engaged by Coherence Consulting Ltd.
+
+### 10. Limitation of Liability
+10.1 Does not exclude liability for death, personal injury, fraud, or breach of implied conditions.
+10.2 Neither party is liable for economic losses, lost revenues, profits, goodwill, or consequential losses.
+10.4 Total liability limited to 125% of Fees paid.
+
+### 11. Termination
+11.1 The Agreement continues for the project term or until either party provides 10 business days written notice.
+11.2 May terminate for non-payment.
+11.3 Either party may terminate for material unremedied breach (30-day cure period) or insolvency.
+11.4 Clients must pay for all Services through termination date.
+
+### 12. Dispute Resolution
+12.1 Parties' representatives shall negotiate promptly and in good faith.
+12.2 If unresolved, mediation per CEDR procedures within 30 days.
+
+### 13. General Provisions
+13.1 No assignment without written consent, except to asset purchasers.
+13.2 Complete agreement; replaces previous agreements.
+13.3 Sub-contractors permitted, held to same standard.
+13.7 Both parties are independent contractors.
+13.10 Governed by the law of England and Wales.
+
+For questions about these terms, contact us at hello@coherence.digital.
+
+---
+
+## Legal
+Coherence Consulting Limited. UK Registration #13606667. VAT #GB389732637.

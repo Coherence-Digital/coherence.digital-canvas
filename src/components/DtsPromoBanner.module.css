@@ -1,0 +1,123 @@
+/* ── DTS Promo Banner ─────────────────────────────────── */
+.banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--coh-dark);
+  padding: clamp(60px, 10vw, 100px) 0;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(206, 12, 79, 0.08) 0%,
+    transparent 50%,
+    rgba(206, 12, 79, 0.05) 100%
+  );
+  z-index: 1;
+}
+
+/* ── Falling quotes (parallax depth) ──────────────────── */
+.quotes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fq {
+  position: absolute;
+  left: var(--fq-x, 10%);
+  top: -10%;
+  font-size: var(--fq-size, 0.65rem);
+  font-style: italic;
+  color: rgba(255, 255, 255, var(--fq-alpha, 0.12));
+  white-space: normal;
+  max-width: 16ch;
+  line-height: 1.35;
+  animation: fqFall var(--fq-duration, 20s) var(--fq-delay, 0s) linear infinite;
+  will-change: transform;
+  font-weight: 300;
+}
+
+@keyframes fqFall {
+  0% {
+    transform: translateY(-20px) rotate(-2deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100% + 200px)) rotate(1deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fq {
+    animation: none;
+    display: none;
+  }
+}
+
+/* ── Content layout ───────────────────────────────────── */
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+.badge {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.copy {
+  flex: 1;
+}
+
+.copy h2 {
+  font-family: var(--coh-font-heading);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--coh-white);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.copy p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  line-height: 1.7;
+  max-width: 52ch;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
