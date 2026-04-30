@@ -11,12 +11,14 @@
 import HomeHero from '../components/HomeHero.jsx';
 import FivePillars from '../components/FivePillars.jsx';
 import PillarBanner from '../components/PillarBanner.jsx';
+import homeStyles from '../pages/HomePage.module.css';
 
-/** Ambient hero section — full-bleed dark background, container-padded inner. */
+/** Hero section — uses the live `.hero` / `.heroInner` classes so canvas
+ *  rendering matches production exactly (light background, brand type scale). */
 function HeroSection({ content, canvasMode }) {
   return (
-    <section style={{ background: '#0f172a', color: 'white', padding: '6rem 0' }}>
-      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+    <section className={homeStyles.hero}>
+      <div className={`container ${homeStyles.heroInner}`}>
         <HomeHero {...content} staticRender={canvasMode} />
       </div>
     </section>
