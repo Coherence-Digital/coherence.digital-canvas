@@ -13,11 +13,11 @@ import FivePillars from '../components/FivePillars.jsx';
 import PillarBanner from '../components/PillarBanner.jsx';
 
 /** Ambient hero section — full-bleed dark background, container-padded inner. */
-function HeroSection({ content }) {
+function HeroSection({ content, canvasMode }) {
   return (
     <section style={{ background: '#0f172a', color: 'white', padding: '6rem 0' }}>
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-        <HomeHero {...content} />
+        <HomeHero {...content} staticRender={canvasMode} />
       </div>
     </section>
   );

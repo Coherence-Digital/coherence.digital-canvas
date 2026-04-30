@@ -154,6 +154,9 @@ export default function CanvasPreview() {
 
   return (
     <main id="main-content" style={{ background: 'white' }}>
+      {/* Inline overrides: disable scroll-triggered fade-in so all sections
+          render fully on first paint inside the canvas iframe. */}
+      <style>{`.reveal { opacity: 1 !important; transform: none !important; }`}</style>
       <YamlPage pageData={doc} canvasMode />
     </main>
   );

@@ -123,12 +123,14 @@ export default function HomeHero({
   carousel_slides,
   subtitle,
   cta,
+  staticRender = false,
 } = {}) {
-  const reducedMotion = useSyncExternalStore(
+  const prefersReducedMotion = useSyncExternalStore(
     subscribeReducedMotion,
     getReducedMotionSnapshot,
     getReducedMotionServerSnapshot
   );
+  const reducedMotion = prefersReducedMotion || staticRender;
 
   const slides = useMemo(() => normaliseSlides(carousel_slides), [carousel_slides]);
   const ariaSummary = useMemo(() => slides.map(slideFullText).join(' '), [slides]);

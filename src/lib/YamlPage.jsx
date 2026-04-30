@@ -25,7 +25,7 @@ export function YamlPage({ pageData, canvasMode = false }) {
             <UnknownPattern key={section.id} sectionId={section.id} pattern={section.pattern} />
           ) : null;
         }
-        const inner = <Component content={content} />;
+        const inner = <Component content={content} canvasMode={canvasMode} />;
         if (!canvasMode) return <Fragment key={section.id}>{inner}</Fragment>;
         return (
           <CanvasSectionFrame key={section.id} sectionId={section.id} pattern={section.pattern}>
