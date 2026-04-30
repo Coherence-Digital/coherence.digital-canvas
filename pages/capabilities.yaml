@@ -1,0 +1,33 @@
+slug: capabilities
+title: Capabilities
+status: draft
+meta:
+  description: >
+    Five disciplines, integrated end-to-end: Consulting, Concept, Code,
+    Context, Care. Reverse-engineered scaffold pending content.
+  path: /capabilities
+sections:
+  - id: sec-pillars-1
+    pattern: five-pillars
+    content:
+      pillars:
+        - icon: consulting
+          title: Consulting
+          subtitle: Understand
+          description: ""
+        - icon: concept
+          title: Concept
+          subtitle: Design
+          description: ""
+        - icon: code
+          title: Code
+          subtitle: Build
+          description: ""
+        - icon: context
+          title: Context
+          subtitle: Measure
+          description: ""
+        - icon: care
+          title: Care
+          subtitle: Run
+          description: ""
