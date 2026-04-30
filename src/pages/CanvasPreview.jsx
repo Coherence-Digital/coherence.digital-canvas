@@ -77,6 +77,52 @@ export default function CanvasPreview() {
     return () => window.removeEventListener('message', onMessage);
   }, []);
 
+  // Broadcast section rects to parent so it can overlay chrome (labels,
+  // drag handles, drop zones) on top of the iframe at the right positions.
+  // Re-broadcast on doc change, window resize, and scroll.
+  useEffect(() => {
+    if (!doc) return undefined;
+    const broadcast = () => {
+      if (!window.parent || window.parent === window) return;
+      const els = document.querySelectorAll('[data-canvas-section-id]');
+      const rects = Array.from(els).map((el) => {
+        const r = el.getBoundingClientRect();
+        return {
+          sectionId: el.getAttribute('data-canvas-section-id'),
+          pattern: el.getAttribute('data-canvas-pattern'),
+          top: r.top + window.scrollY,
+          left: r.left,
+          width: r.width,
+          height: r.height,
+        };
+      });
+      window.parent.postMessage(
+        {
+          source: 'canvas-preview',
+          type: 'rects',
+          rects,
+          documentHeight: document.documentElement.scrollHeight,
+          scrollY: window.scrollY,
+          viewportHeight: window.innerHeight,
+        },
+        '*'
+      );
+    };
+    // First broadcast after layout settles
+    const id = setTimeout(broadcast, 50);
+    const id2 = setTimeout(broadcast, 300);
+    const onResize = () => broadcast();
+    const onScroll = () => broadcast();
+    window.addEventListener('resize', onResize);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      clearTimeout(id);
+      clearTimeout(id2);
+      window.removeEventListener('resize', onResize);
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, [doc]);
+
   if (error) {
     return (
       <div style={{ padding: '4rem 2rem', fontFamily: 'system-ui, sans-serif' }}>
