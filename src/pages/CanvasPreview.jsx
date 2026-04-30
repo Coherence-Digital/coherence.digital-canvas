@@ -37,7 +37,10 @@ export default function CanvasPreview() {
       const url = new URL(window.location.href);
       const inline = url.searchParams.get('yaml');
       if (inline) {
-        const decoded = atob(inline);
+        // atob returns binary string; coerce through UTF-8 so em-dashes etc. survive.
+        const binary = atob(inline);
+        const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+        const decoded = new TextDecoder('utf-8').decode(bytes);
         const parsed = yaml.load(decoded);
         if (parsed && typeof parsed === 'object') setDoc(parsed);
       }
