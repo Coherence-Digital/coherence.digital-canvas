@@ -1,4 +1,4 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, useLocation } from "react-router";
 import Analytics from "./components/Analytics";
 import CookieConsent from "./components/CookieConsent";
 import CalFloatingButton from "./components/CalFloatingButton";
@@ -18,6 +18,11 @@ export function meta() {
 }
 
 export function Layout({ children }) {
+  const location = useLocation();
+  // /canvas-preview is rendered inside an iframe by the Loki canvas builder.
+  // Suppress site chrome (cookie banner, cal button, analytics, skip link)
+  // so only the page content is visible in the frame.
+  const isCanvasPreview = location?.pathname?.startsWith("/canvas-preview");
   return (
     <html lang="en">
       <head>
@@ -32,11 +37,13 @@ export function Layout({ children }) {
         <Links />
       </head>
       <body>
-        <a className="skip-link" href="#main-content">Skip to main content</a>
+        {!isCanvasPreview && (
+          <a className="skip-link" href="#main-content">Skip to main content</a>
+        )}
         {children}
-        <Analytics />
-        <CookieConsent />
-        <CalFloatingButton />
+        {!isCanvasPreview && <Analytics />}
+        {!isCanvasPreview && <CookieConsent />}
+        {!isCanvasPreview && <CalFloatingButton />}
         <ScrollRestoration />
         <Scripts />
       </body>
