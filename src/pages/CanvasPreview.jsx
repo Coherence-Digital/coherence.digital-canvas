@@ -155,8 +155,25 @@ export default function CanvasPreview() {
   return (
     <main id="main-content" style={{ background: 'white' }}>
       {/* Inline overrides: disable scroll-triggered fade-in so all sections
-          render fully on first paint inside the canvas iframe. */}
-      <style>{`.reveal { opacity: 1 !important; transform: none !important; }`}</style>
+          render fully on first paint inside the canvas iframe.
+
+          Also neuter viewport-height (vh / svh / dvh / lvh) min-heights on
+          section roots — inside the canvas iframe the parent sets the iframe
+          height to match scrollHeight, which makes vh-based heights spiral up
+          (hero becomes 85% of an ever-growing document). Use natural content
+          height instead, with a sensible padding fallback. */}
+      <style>{`
+        .reveal { opacity: 1 !important; transform: none !important; }
+        /* Sections that use viewport-height min-heights (e.g. .hero { min-height: 85vh })
+           cause a feedback loop inside the canvas iframe — the parent sets the iframe
+           height to scrollHeight, which makes vh-based heights spiral up. Neuter
+           min-heights on section roots so they size to their content. */
+        section[class*="_hero__"],
+        section[class*="_banner__"],
+        section[class*="_hugeHero__"] {
+          min-height: 0 !important;
+        }
+      `}</style>
       <YamlPage pageData={doc} canvasMode />
     </main>
   );
