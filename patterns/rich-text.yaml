@@ -1,0 +1,21 @@
+name: rich-text
+version: 1.0.0
+category: content
+display_name: Text Block
+description: >
+  Typographic block — optional heading, body copy, alignment + width controls.
+  Use for intros, mission statements, and copy-led sections between visuals.
+react_component: RichText
+react_module: ../components/RichText.jsx
+slots:
+  - { name: heading, type: string,   required: false }
+  - { name: body,    type: richtext, required: true }
+  - { name: align,   type: enum,     options: [left, center], default: left }
+  - { name: width,   type: enum,     options: [narrow, wide, full], default: wide }
+preview:
+  thumbnail: rich-text.png
+  aspect: 16/5
+  shape: text-block
+design_tokens:
+  - color.surface.primary
+  - type.body.lg
