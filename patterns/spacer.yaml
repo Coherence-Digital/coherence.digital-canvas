@@ -1,0 +1,14 @@
+name: spacer
+version: 1.0.0
+category: atom
+display_name: Spacer
+description: >
+  Vertical whitespace between sections. Sizes: sm (2rem), md (4rem),
+  lg (6rem), xl (10rem).
+react_component: Spacer
+react_module: ../components/Spacer.jsx
+slots:
+  - { name: size, type: enum, options: [sm, md, lg, xl], default: md }
+preview:
+  thumbnail: spacer.png
+  shape: spacer

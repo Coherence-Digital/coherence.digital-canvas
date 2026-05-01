@@ -1,0 +1,18 @@
+name: heading
+version: 1.0.0
+category: atom
+display_name: Heading
+description: >
+  Standalone heading. Choose level (h2/h3/h4), size, and alignment. Use to
+  open or punctuate a page outside hero context.
+react_component: Heading
+react_module: ../components/Heading.jsx
+slots:
+  - { name: text,  type: string, required: true }
+  - { name: level, type: enum,   options: [h2, h3, h4], default: h2 }
+  - { name: size,  type: enum,   options: [sm, md, lg, xl], default: lg }
+  - { name: align, type: enum,   options: [left, center], default: left }
+  - { name: width, type: enum,   options: [narrow, wide, full], default: wide }
+preview:
+  thumbnail: heading.png
+  shape: text-block

@@ -1,0 +1,15 @@
+.root {
+  margin-inline: auto;
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+}
+.narrow { max-width: 640px; }
+.wide   { max-width: var(--coh-max-width, 1200px); }
+.full   { max-width: none; padding-inline: 0; }
+.rule {
+  border: 0;
+  background: var(--coh-grey-300, #ccc);
+  width: 100%;
+}
+.thin  { height: 1px; }
+.thick { height: 3px; background: var(--coh-dark, #1a1a1a); }

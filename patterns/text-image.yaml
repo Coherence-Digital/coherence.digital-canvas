@@ -1,0 +1,18 @@
+name: text-image
+version: 1.0.0
+category: content
+display_name: Text + Image
+description: >
+  Text and image side-by-side. Image left or right; stacks on mobile.
+  Optional CTA below the body.
+react_component: TextImage
+react_module: ../components/TextImage.jsx
+slots:
+  - { name: heading,        type: string,   required: false }
+  - { name: body,           type: richtext, required: true }
+  - { name: image,          type: image,    required: true }
+  - { name: cta,            type: link,     required: false }
+  - { name: image_position, type: enum,     options: [left, right], default: right }
+preview:
+  thumbnail: text-image.png
+  shape: split

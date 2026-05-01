@@ -1,0 +1,16 @@
+name: video
+version: 1.0.0
+category: media
+display_name: Video Embed
+description: >
+  Embedded video — paste a YouTube or Vimeo URL. Supports caption and
+  width. The component normalises share URLs to embed URLs.
+react_component: VideoEmbed
+react_module: ../components/VideoEmbed.jsx
+slots:
+  - { name: url,     type: string, required: true }
+  - { name: caption, type: string, required: false }
+  - { name: width,   type: enum, options: [narrow, wide, full], default: wide }
+preview:
+  thumbnail: video.png
+  shape: video

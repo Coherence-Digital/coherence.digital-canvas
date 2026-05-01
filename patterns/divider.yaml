@@ -1,0 +1,15 @@
+name: divider
+version: 1.0.0
+category: atom
+display_name: Divider
+description: >
+  Horizontal rule for visual separation. Variants: thin (1px) or thick (3px).
+  Width controls the rule length: narrow / wide / full-bleed.
+react_component: Divider
+react_module: ../components/Divider.jsx
+slots:
+  - { name: variant, type: enum, options: [thin, thick], default: thin }
+  - { name: width,   type: enum, options: [narrow, wide, full], default: wide }
+preview:
+  thumbnail: divider.png
+  shape: divider

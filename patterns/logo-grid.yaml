@@ -1,0 +1,21 @@
+name: logo-grid
+version: 1.0.0
+category: content
+display_name: Logo Grid
+description: >
+  Grid of partner / customer / press logos. Each logo can link out.
+  Greys logos out by default; hovers restore colour.
+react_component: LogoGrid
+react_module: ../components/LogoGrid.jsx
+slots:
+  - { name: heading, type: string, required: false }
+  - { name: logos,   type: list<logo>, required: true, min: 3 }
+  - { name: columns, type: enum, options: ['3', '4', '5', '6'], default: '5' }
+preview:
+  thumbnail: logo-grid.png
+  shape: grid
+sub_types:
+  logo:
+    slots:
+      - { name: image, type: image, required: true }
+      - { name: link,  type: link,  required: false }

@@ -1,0 +1,17 @@
+name: quote
+version: 1.0.0
+category: content
+display_name: Pull Quote
+description: >
+  Standalone pull quote with attribution and optional role. Use for
+  testimonials and standout statements between body sections.
+react_component: Quote
+react_module: ../components/Quote.jsx
+slots:
+  - { name: text,        type: text,   required: true }
+  - { name: attribution, type: string, required: false }
+  - { name: role,        type: string, required: false }
+  - { name: align,       type: enum, options: [left, center], default: center }
+preview:
+  thumbnail: quote.png
+  shape: text-block

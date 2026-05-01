@@ -1,0 +1,16 @@
+name: button
+version: 1.0.0
+category: atom
+display_name: Button
+description: >
+  Standalone CTA button. Variants: pink (primary), dark, outline. Use as a
+  page-level call to action between sections.
+react_component: ButtonBlock
+react_module: ../components/ButtonBlock.jsx
+slots:
+  - { name: cta,     type: link, required: true }
+  - { name: variant, type: enum, options: [pink, dark, outline], default: pink }
+  - { name: align,   type: enum, options: [left, center], default: left }
+preview:
+  thumbnail: button.png
+  shape: button

@@ -1,0 +1,20 @@
+name: faq
+version: 1.0.0
+category: content
+display_name: FAQ
+description: >
+  List of question/answer items as accordions. Click to expand. Use for
+  pricing, support, and onboarding pages.
+react_component: Faq
+react_module: ../components/Faq.jsx
+slots:
+  - { name: heading, type: string, required: false }
+  - { name: items,   type: list<faq_item>, required: true, min: 1 }
+preview:
+  thumbnail: faq.png
+  shape: accordion
+sub_types:
+  faq_item:
+    slots:
+      - { name: question, type: string, required: true }
+      - { name: answer,   type: text,   required: true }

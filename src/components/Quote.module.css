@@ -1,0 +1,32 @@
+.root {
+  max-width: 760px;
+  margin-inline: auto;
+  padding-block: 3rem;
+  padding-inline: 1.5rem;
+}
+.alignLeft   { text-align: left; }
+.alignCenter { text-align: center; }
+.quote {
+  font-family: var(--coh-font-heading, inherit);
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--coh-dark, #1a1a1a);
+  margin: 0;
+}
+.mark, .markEnd {
+  color: var(--coh-pink, #ff3b8b);
+  font-weight: 700;
+  margin-inline: 0.15em;
+}
+.cite {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--coh-grey-700, #555);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.alignCenter .cite { align-items: center; }
+.who { font-weight: 600; color: var(--coh-dark, #1a1a1a); }
+.role { font-size: 0.85rem; color: var(--coh-grey-500, #767676); }

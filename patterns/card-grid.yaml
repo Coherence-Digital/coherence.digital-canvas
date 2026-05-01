@@ -1,0 +1,23 @@
+name: card-grid
+version: 1.0.0
+category: content
+display_name: Card Grid
+description: >
+  Grid of cards — image / icon + title + description + optional link.
+  Responsive: collapses to 2 columns on tablet, 1 on mobile.
+react_component: CardGrid
+react_module: ../components/CardGrid.jsx
+slots:
+  - { name: heading, type: string, required: false }
+  - { name: cards,   type: list<card>, required: true, min: 2 }
+  - { name: columns, type: enum, options: ['2', '3', '4'], default: '3' }
+preview:
+  thumbnail: card-grid.png
+  shape: grid
+sub_types:
+  card:
+    slots:
+      - { name: image,       type: image,  required: false }
+      - { name: title,       type: string, required: true }
+      - { name: description, type: text,   required: false }
+      - { name: link,        type: link,   required: false }
