@@ -12,6 +12,7 @@ import HomeHero from '../components/HomeHero.jsx';
 import FivePillars from '../components/FivePillars.jsx';
 import PillarBanner from '../components/PillarBanner.jsx';
 import RichText from '../components/RichText.jsx';
+import ImageBlock from '../components/ImageBlock.jsx';
 import homeStyles from '../pages/HomePage.module.css';
 
 /** Hero section — uses the live `.hero` / `.heroInner` classes so canvas
@@ -56,11 +57,26 @@ function RichTextSection({ content }) {
   );
 }
 
+/** Single image with optional caption. */
+function ImageBlockSection({ content }) {
+  return (
+    <section className="section">
+      <ImageBlock
+        image={content?.image}
+        caption={content?.caption}
+        width={content?.width}
+        aspect={content?.aspect}
+      />
+    </section>
+  );
+}
+
 export const PATTERN_REGISTRY = {
   hero: HeroSection,
   'five-pillars': FivePillarsSection,
   'pillar-banner': PillarBannerSection,
   'rich-text': RichTextSection,
+  image: ImageBlockSection,
 };
 
 export function getPatternComponent(name) {

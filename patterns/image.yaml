@@ -1,0 +1,21 @@
+name: image
+version: 1.0.0
+category: media
+display_name: Image
+description: >
+  Single image with optional caption. Supports narrow/wide/full widths and
+  three aspect ratios (auto / 16:9 / 4:3). Use as a hero image, inline
+  illustration, or end-of-section visual.
+react_component: ImageBlock
+react_module: ../components/ImageBlock.jsx
+slots:
+  - { name: image,   type: image,  required: true }
+  - { name: caption, type: string, required: false }
+  - { name: width,   type: enum,   options: [narrow, wide, full], default: wide }
+  - { name: aspect,  type: enum,   options: [auto, '16/9', '4/3'], default: auto }
+preview:
+  thumbnail: image.png
+  aspect: 16/9
+  shape: media
+design_tokens:
+  - color.surface.primary
